@@ -8,7 +8,7 @@ export default function CreateScreen({navigation}) {
   const {addBlogPost} = useContext(Context)
   return (
     <View>
-      <BlogPostForm onSubmit={(title,content) => addBlogPost(title,content,() => navigation.navigate('Home'))} />
+      <BlogPostForm isEdit ={false} onSubmit={(title,content) => addBlogPost(title,content,() => navigation.navigate('Home'))} />
     </View>
   )
 }
